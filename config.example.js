@@ -1,10 +1,5 @@
 const config = {};
 
-config.account = {
-  username: 'x',
-  password: 'x',
-};
-
 config.webdriver = {
   desiredCapabilities: {
     browserName: 'chrome',

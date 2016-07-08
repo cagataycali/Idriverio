@@ -1,6 +1,6 @@
 import webdriver from 'selenium-webdriver';
 import chrome from 'selenium-webdriver/chrome';
-let path = require('chromedriver').path;
+const path = require('chromedriver').path;
 import config from './config.js';
 
 async function recorder(url) {
