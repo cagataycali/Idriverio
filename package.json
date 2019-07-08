@@ -4,7 +4,9 @@
   "description": "webdriverio-example",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node --presets es2015 index.js"
+    "start": "nodemon --exec babel-node --presets es2015 index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "webdriverio"
@@ -13,7 +15,8 @@
     "babel-polyfill": "^6.9.1",
     "nodemon": "^1.9.2",
     "underscore": "^1.8.3",
-    "webdriverio": "^4.2.0"
+    "webdriverio": "^4.2.0",
+    "snyk": "^1.192.3"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",
@@ -30,5 +33,6 @@
     "eslint-plugin-react": "^5.2.2"
   },
   "author": "Çağatay Çalı",
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
